@@ -1,0 +1,40 @@
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+}
+.nav-link {
+  color: #757575 !important;
+  margin: 0 20px;
+  font-weight: 500;
+  position: relative;
+}
+
+.nav-hot::after {
+  content: "HOT";
+  position: absolute;
+  font-size: 8px;
+  font-weight: 700;
+  top: -15px;
+  right: -15px;
+  background-color: #e7462d;
+  padding: 4.6px 9px;
+  border-radius: 7px;
+  color: white;
+}
+.button-wrapper {
+  display: flex;
+  gap: 5px;
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .nav-wrapper {
+    display: none;
+  }
+  .logo {
+    width: 150px;
+    height: 36px;
+  }
+}
