@@ -1,0 +1,44 @@
+.cardWrapper {
+  /* background-color: pink; */
+  min-width: 230px;
+  height: 175px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  align-items: center;
+  border-radius: 8px;
+  padding-top: 30px;
+  transition: all 200ms ease;
+  position: relative;
+}
+.cardWrapper:hover {
+  cursor: pointer;
+  scale: 1.05;
+}
+.cardWrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("/assets/background.svg");
+  background-size: cover;
+  opacity: 0;
+  z-index: -10;
+  transition: opacity 0.3s ease;
+}
+
+.cardWrapper:hover::before {
+  opacity: 0.1;
+}
+.title {
+  margin-bottom: 5px;
+  font-size: 16px;
+  text-align: center;
+  font-weight: 500;
+}
+.subTitle {
+  text-align: center;
+  font-size: 14px;
+}

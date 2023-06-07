@@ -1,6 +1,7 @@
 import Image from "next/image";
 import styles from "./hero.module.css";
 import { Button } from "../button/button";
+import { Rating } from "../rating/rating";
 export const Hero = () => {
   return (
     <div className={styles.hero}>
@@ -30,41 +31,7 @@ export const Hero = () => {
                 <p className={styles.title2}>Green Salad Tomato</p>
                 <p className={styles.subTitle2}>Tomato</p>
                 <div className={styles.ratingWrapper}>
-                  <Image
-                    src="/assets/Vector1.svg"
-                    width={10}
-                    height={10}
-                    alt="rating"
-                    className={styles.rating}
-                  />
-                  <Image
-                    src="/assets/Vector1.svg"
-                    width={10}
-                    height={10}
-                    alt="rating"
-                    className={styles.rating}
-                  />
-                  <Image
-                    src="/assets/Vector1.svg"
-                    width={10}
-                    height={10}
-                    alt="rating"
-                    className={styles.rating}
-                  />
-                  <Image
-                    src="/assets/Vector1.svg"
-                    width={10}
-                    height={10}
-                    alt="rating"
-                    className={styles.rating}
-                  />
-                  <Image
-                    src="/assets/Vector.svg"
-                    width={10}
-                    height={10}
-                    alt="rating"
-                    className={styles.rating}
-                  />
+                  <Rating total={4} />
                 </div>
               </div>
             </div>
@@ -102,41 +69,7 @@ export const Hero = () => {
               <p className={styles.title2}>Green Salad Tomato</p>
               <p className={styles.subTitle2}>Tomato</p>
               <div className={styles.ratingWrapper}>
-                <Image
-                  src="/assets/Vector1.svg"
-                  width={10}
-                  height={10}
-                  alt="rating"
-                  className={styles.rating}
-                />
-                <Image
-                  src="/assets/Vector1.svg"
-                  width={10}
-                  height={10}
-                  alt="rating"
-                  className={styles.rating}
-                />
-                <Image
-                  src="/assets/Vector1.svg"
-                  width={10}
-                  height={10}
-                  alt="rating"
-                  className={styles.rating}
-                />
-                <Image
-                  src="/assets/Vector1.svg"
-                  width={10}
-                  height={10}
-                  alt="rating"
-                  className={styles.rating}
-                />
-                <Image
-                  src="/assets/Vector.svg"
-                  width={10}
-                  height={10}
-                  alt="rating"
-                  className={styles.rating}
-                />
+                <Rating total={4} />
               </div>
             </div>
           </div>

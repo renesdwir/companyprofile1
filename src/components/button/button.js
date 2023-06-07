@@ -1,9 +1,18 @@
 import React from "react";
 import styles from "./button.module.css";
 
-export const Button = ({ children, buttonType, hide, ...otherProps }) => {
+export const Button = ({
+  children,
+  buttonType,
+  hide,
+  squareLeft,
+  ...otherProps
+}) => {
   let buttonClassName = "";
-
+  let squareClassName = "";
+  if (squareLeft) {
+    squareClassName = styles.square;
+  }
   if (buttonType === "green") {
     buttonClassName = styles.green;
   } else if (buttonType === "grey") {
@@ -14,7 +23,7 @@ export const Button = ({ children, buttonType, hide, ...otherProps }) => {
   let hideMobile = hide ? styles.hideMobile : "";
   return (
     <button
-      className={`${styles["button"]} ${buttonClassName} ${hideMobile}`}
+      className={`${styles["button"]} ${buttonClassName} ${hideMobile} ${squareClassName}`}
       {...otherProps}
     >
       {children}

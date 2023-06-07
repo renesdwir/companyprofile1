@@ -1,0 +1,50 @@
+.cardWrapper {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  max-width: 100%;
+  overflow-x: auto;
+  padding: 20px 0;
+  scrollbar-width: thin;
+}
+.cardWrapper::-webkit-scrollbar {
+  width: 2px;
+  height: 10px;
+}
+.cardWrapper::-webkit-scrollbar-thumb {
+  background-color: #cdcdcd;
+  border-radius: 4px;
+}
+
+.cardWrapper::-webkit-scrollbar-track {
+  background-color: #f2f2f2;
+  border-radius: 4px;
+}
+
+.button-wrapper {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+  flex-direction: row-reverse;
+}
+.iconWrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border-radius: 100%;
+}
+
+@media (max-width: 480px) {
+  .cardWrapper {
+    margin-top: 10px;
+  }
+}

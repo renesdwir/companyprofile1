@@ -1,0 +1,22 @@
+.content2Wrapper {
+  margin-top: 50px;
+}
+.cardWrapper {
+  display: grid;
+  margin: 20px auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 20px;
+  justify-content: space-between;
+}
+.buttonWrapper {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 480px) {
+  .cardWrapper {
+    grid-template-columns: 1fr;
+  }
+}
